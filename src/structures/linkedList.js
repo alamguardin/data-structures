@@ -64,11 +64,4 @@ class LinkedList {
     }
 }
 
-const linkedList = new LinkedList()
-linkedList.push(24)
-linkedList.push(43)
-linkedList.push(12)
-linkedList.push(34)
-linkedList.pop()
-
-console.log(linkedList.head)
+export default LinkedList
