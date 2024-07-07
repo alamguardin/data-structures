@@ -37,13 +37,38 @@ class LinkedList {
 
         this.head = newNode
     }
+
+    // Delete first item
+    shift() {
+        if (!this.head) { return null }
+
+        this.head = this.head.next
+
+        if (this.head) {
+            this.head.prev = null
+        } else {
+            this.tail = null
+        }
+    }
+
+    pop() {
+        if (!this.tail) { return null }
+
+        this.tail = this.tail.prev
+
+        if (this.tail) {
+            this.tail.next = null
+        } else {
+            this.head = null
+        }
+    }
 }
 
 const linkedList = new LinkedList()
 linkedList.push(24)
 linkedList.push(43)
 linkedList.push(12)
-linkedList.unshift(15)
-linkedList.unshift(12)
+linkedList.push(34)
+linkedList.pop()
 
 console.log(linkedList.head)
