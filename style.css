@@ -44,6 +44,7 @@
     padding: 0.375rem 0.5rem;
     background: #1c1917;
     font-size: 0.875rem;
+    color: #e7e5e4;
     font-weight: bold;
     border: 1px solid #262626;
     border-radius: 0.375rem;
@@ -68,4 +69,38 @@
 
 .actions-button:active {
     transform: scale(0.9);
+}
+
+#data {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    border: 1px solid #1c1917;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    /* overflow: hidden; */
+}
+
+.table-heading, .table-item {
+    text-align: center;
+    padding: 0.375rem 1rem;
+    border: 1px solid #1c1917;
+}
+
+.table-heading {
+    background: #1c1917;
+}
+
+.table-item.--prev {
+    color: #fb923c;
+}
+
+.table-item.--value {
+    color: #e7e5e4;
+}
+
+.table-item.--next {
+    color: #4ade80
 }
